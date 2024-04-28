@@ -1,0 +1,153 @@
+#root {
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 0rem;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    /* background: linear-gradient(135deg, #47e3b6, #42476b); */
+    background-image: url(https://wallpapercave.com/wp/wp4673203.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    font-size: 100%;
+}
+
+.todolistnnn {
+    
+    /* background-color: #948979; */
+    
+    width: 100%;
+    display: block;
+}
+
+.apptodo {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 60rem;
+    /* background: #153448; */
+    background:transparent;
+    margin: 10em auto 2em;
+    padding: 4rem 3rem 7rem;
+    border-radius: 1rem;
+    /* background-color: #42476b; */
+}
+
+
+
+.logoh2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputundadd {
+    margin: 1 rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.add {
+    width: 20rem;
+    border-radius: 3rem 3rem 3rem 3rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    
+}
+
+h1{
+    color: #FFC100;
+}
+
+
+.btnadditem {
+    border-radius: 3rem 3rem 3rem 3rem;
+    width: 7rem;
+    padding: 0.5rem;
+    cursor: pointer;
+
+}
+.btnadditem:hover {
+transition-duration: 0.2s;
+background-color: #DFD0B8;
+cursor: pointer;}
+
+.SER {
+    border-radius: 3rem 3rem 3rem 3rem;
+    padding: 0.8%;
+    cursor: pointer;
+    margin: 0.2em;
+}
+
+.SER:hover {
+
+    transition-duration: 0.2s;
+    background-color: #3C5B6F;
+    cursor: pointer;
+
+}
+
+
+.SERemove{border-radius: 3rem 3rem 3rem 3rem;
+    padding: 0.8%;
+    cursor: pointer;
+    margin: 0.2em;}
+.SERemove:hover{  transition-duration: 0.2s;
+    background-color: #561C24;
+    cursor: pointer;
+
+
+}
+
+.checkbox {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+
+
+}
+
+li {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style-type: circle;
+    cursor: pointer;
+    margin: 0.5rem;
+    align-items: center;
+
+    background-image: linear-gradient(
+    to bottom,
+    rgb(213 206 163 / 50%),
+    rgb(229 229 203 / 50%))
+}
+
+
+li:hover {
+    transition-duration: 0.2s;
+    background-color: #DFD0B8;
+    cursor: pointer;
+}

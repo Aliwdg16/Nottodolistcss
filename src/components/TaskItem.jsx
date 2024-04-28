@@ -23,7 +23,7 @@ const TaskItem = ({ task, toggleTask, removeTask, updateTask }) => {
 
   return (
     <li style={{ textDecoration: task.done ? 'line-through' : 'none' }}>
-      <input type='checkbox' checked={task.done} onChange={handleToggleDone} />
+      <input className='checkbox' type='checkbox' checked={task.done} onChange={handleToggleDone} />
       {edit ? (
         <input
           type='text'
@@ -37,11 +37,11 @@ const TaskItem = ({ task, toggleTask, removeTask, updateTask }) => {
         <span>{task.title}</span>
       )}
       {edit ? (
-        <button onClick={handleEdit}>Save</button>
+        <button className='SER' onClick={handleEdit}>Save</button>
       ) : (
-        <button onClick={() => setEdit(true)}>Edit</button>
+        <button className='SER' onClick={() => setEdit(true)}>Edit</button>
       )}
-      <button onClick={() => removeTask(task.id)}>Remove</button>
+      <button className='SERemove' onClick={() => removeTask(task.id)}>Remove</button>
     </li>
   );
 };

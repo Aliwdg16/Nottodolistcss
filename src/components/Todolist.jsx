@@ -41,16 +41,21 @@ const TodoList = () => {
   };
 
   return (
-    <div>
+    <div className='todolistnnn' >
+      
       <h1>Todo List</h1>
-      <input
+
+      <div className='inputundadd'>
+      <input className='add'
         type='text'
         value={newTask}
         onChange={(e) => setNewTask(e.target.value)}
         placeholder='Add a new task'
       />
-      <button onClick={addTask}>Add</button>
-      <ul>
+      <button className='btnadditem' onClick={addTask}>Add</button>
+      </div>
+           
+      <ul >
         {tasks.map((task) => (
           <TaskItem
             key={task.id}
@@ -61,7 +66,8 @@ const TodoList = () => {
           />
         ))}
       </ul>
-    </div>
+      </div>
+    
   );
 };
 
